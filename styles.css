@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #121212, #1e1e1e);
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.toggle-btn, .gen-btn {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+    margin: 15px 0; /* Отступы между кнопками */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.toggle-btn:hover, .gen-btn:hover {
+    background-color: #1565c0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.separator {
+    height: 2px;
+    background-color: #1e88e5; /* Цвет линии */
+    margin: 20px 0; /* Отступы вокруг линии */
+}
+
+.options {
+    display: none; /* Скрываем опции по умолчанию */
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.options button {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 5px 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.options button:hover {
+    background-color: #1565c0;
+    transform: scale(1.05);
+}
+
+.options button:active {
+    transform: scale(0.95);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .gen-btn, .toggle-btn {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .result {
+        font-size: 18px;
+    }
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор фильмов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Генератор фильмов</h1>
+        <p>Выберите один из генераторов ниже:</p>
+        
+        <!-- Кнопка для случайного фильма -->
+        <button class="gen-btn" onclick="generateRandomMovie()">Случайный фильм</button>
+        
+        <!-- Кнопка для выбора настроения -->
+        <button class="toggle-btn" onclick="toggleMoodOptions()">Выбрать настроение</button>
+        <div id="mood-options" class="options">
+            <button onclick="selectMood('Веселый')">Веселый</button>
+            <button onclick="selectMood('Грустный')">Грустный</button>
+            <button onclick="selectMood('Напряженный')">Напряженный</button>
+        </div>
+
+        <!-- Кнопка для выбора жанра -->
+        <button class="toggle-btn" onclick="toggleGenreOptions()">Выбрать жанр</button>
+        <div id="genre-options" class="options">
+            <button onclick="selectGenre('Комедия')">Комедия</button>
+            <button onclick="selectGenre('Драма')">Драма</button>
+            <button onclick="selectGenre('Фантастика')">Фантастика</button>
+        </div>
+
+        <!-- Блок для отображения результата -->
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
